@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct TheDeepApp: App {
+    init() {
+        requestHealthKitAuthorization()
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()
